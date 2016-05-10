@@ -16,9 +16,9 @@
 # limitations under the License.
 #
 
-default['emet']['package_name'] = 'EMET 5.1'
-default['emet']['url']          = 'http://download.microsoft.com/download/A/A/8/AA853FAE-7608-462E-B166-45B0F065BA13/EMET%205.1%20Setup.msi'
-default['emet']['checksum']     = '191c57c636c7916e0ff9e30d4f91f5ccbb6fb935fffe6e7548c06ec92f344f0f'
+default['emet']['package_name'] = 'EMET 5.5'
+default['emet']['url']          = 'http://download.microsoft.com/download/8/E/E/8EEFD9FC-46B1-4A8B-9B5D-13B4365F8CA0/EMET%20Setup.msi'
+default['emet']['checksum']     = '4c75ccfad0d480d510385f6c1e48c815211db64feefa9be18ad55772028c581d'
 default['emet']['config_path']  = "C:/Program Files (x86)/#{node['emet']['package_name']}/deployment"
 
 # Set default mitigation options
