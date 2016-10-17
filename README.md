@@ -1,6 +1,6 @@
 sbp_emet Cookbook
 =================
-This cookbook will install EMET 5.5 and manage the configuration.
+This cookbook will install EMET 5.51 and manage the configuration.
 
 Requirements
 ------------
@@ -20,7 +20,7 @@ default['emet']['process']['acrobatreader']['mitigations'] = {
 Usage
 -----
 sbp_emet::install
-will download EMET 5.5 from Microsoft download and install EMET.
+will download EMET 5.51 from Microsoft download and install EMET.
 
 sbp_emet::configure
 will setup global system settings and define process

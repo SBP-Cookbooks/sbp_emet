@@ -28,11 +28,11 @@ template "#{node['emet']['config_path']}/emet_protection_rules.xml" do
 end
 
 execute 'clean_rules' do
-  command "\"C:/Program Files (x86)/#{node['emet']['package_name']}/emet_conf.exe\" --delete_apps"
+  command "\"#{node['emet']['install_path']}emet_conf.exe\" --delete_apps"
   action :nothing
 end
 
 execute 'import_rules' do
-  command "\"C:/Program Files (x86)/#{node['emet']['package_name']}/emet_conf.exe\" --import \"#{node['emet']['config_path']}/emet_protection_rules.xml\""
+  command "\"#{node['emet']['install_path']}emet_conf.exe\" --import \"#{node['emet']['config_path']}/emet_protection_rules.xml\""
   action :nothing
 end
